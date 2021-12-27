@@ -18,9 +18,10 @@ stages:
           - uses: CodeccCheckAtomDebug@4.*
             name: 腾讯代码分析
             with:
-              beAutoLang: true
-              # languages: # 工程语言, 必选, 可取值："C_CPP", "JAVA", "C_SHARP", "JS", "OC", "PYTHON", "PHP", "RUBY", "GOLANG", "SWIFT", "TYPESCRIPT", "KOTLIN", "LUA", "OTHERS"
-              #   - "JAVA"
-              checkerSetType: "openScan" #openScan对应按开源治理要求配置规则集，epcScan对应按PCG EPC要求配置，normal对应自主配置规则集
+              languages: # 工程语言, 必选, 可取值："C_CPP", "JAVA", "C_SHARP", "JS", "OC", "PYTHON", "PHP", "RUBY", "GOLANG", "SWIFT", "TYPESCRIPT", "KOTLIN", "LUA", "OTHERS"
+                - "PYTHON"
+              checkerSetType: "normal" #openScan对应按开源治理要求配置规则集，epcScan对应按PCG EPC要求配置，normal对应自主配置规则集
               toolScanType: "0" # 扫描方式。0是全量扫描，1是增量扫描。
-              # 更多参数可以查看 https://iwiki.woa.com/p/505481576
+              languageRuleSetMap:
+                PYTHON_RULE:
+                  - "standard_python"
