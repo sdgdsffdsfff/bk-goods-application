@@ -98,7 +98,6 @@ git pull blueking-train
 	```
 	# 进入前端工作目录
 	cd frontend
-	cd desktop
 	# 下载依赖
 	npm i
 	# 运行项目
