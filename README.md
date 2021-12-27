@@ -26,9 +26,9 @@
 
 ```powershell
 # 克隆自己git仓库代码到本地
-https://github.com/TencentBlueKing/bk-goods-application.git
+https://github.com/Jsummer121/bk-goods-application.git
 # 添加自己fork的主仓库源
-git remote add blueking-train https://github.com/TencentBlueKing/bk-goods-application.git
+git remote add blueking-train https://github.com/Jsummer121/bk-goods-application.git
 git pull blueking-train
 ```
 
